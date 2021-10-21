@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comparing U.S. Marital Status to Poverty Rate by Family Type</title>
+  <!-- your CSS stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+</head>
+<!-- HEAD element closes above -->
+
+<body>
+
+<div id="grid">
+
+<header>
+  <h1>Comparing U.S. Marital Status to Poverty Rate by Family Type</h1>
+
+  <p>By Isabella Ruiz</p>
+</header>
+  <!-- this container div will hold one chart
+         it is empty now - JavaScript will write into it when the page loads -->
+
+<div id="container"></div>
+
+  <p id ="text">
+Source: United States Census Bureau, <a href="https://www.census.gov/data/tables/time-series/demo/families/marital.html" target="_blank"> Table MS-1. Marital Status of the Population 15 Years Old and Over, by Sex, Race and Hispanic Origin: 1950 to Present</a>. <br>
+This chart shows the marital status of the population 15 years old and over from 2010 to 2020. The rate at which women and men are married declined from 2010-2015, but it slowly began to increase again at 2016. 2016 marked a change in American's marital age, as women's  median age at marriage reached 27.4 and men's hit 29.5, about 7 years more than the median in the 1960s,   <a href="https://www.pewresearch.org/fact-tank/2017/09/14/as-u-s-marriage-rate-hovers-at-50-education-gap-in-marital-status-widens/" target="_blank"> according to Census data used by Pew Research Center.</a>Comparing this to the chart below on martial poverty statistics, we see that married familes finally reached sub-5% poverty by 2017, and have yet to come above this measure again. </p>
+
+
+<div id="container1"></div>
+
+
+<p id="text1">
+Source: United States Census Bureau, <a href="https://www.census.gov/data/tables/2021/demo/income-poverty/p60-273.html" target="_blank"> Table B-6. Poverty Status of Families by Type of Family: 1959 to 2020</a> <br> This chart shows the percentage of familes below the poverty line by family type from 2010-2020. <br> Male and female householders have no other spouse present.  Female households experience the highest level of poverty compared to all other family compositions. Married couples have the lowest level of poverty.  Although female- and male-led households have one breadwinner, male-led households are around 10% less likely to earn below the poverty line. Looking at the bar graph above this chart, we are able to see that the rate at which women are unmarried from 2010-2020 has remained fairly consistent at around 48-49%. The female-led household poverty rate fell about 3% from 2018 to 2019, but it began to climb back up going into 2020, where it hit 23.4%. <a href="https://www.bread.org/sites/default/files/downloads/female-headed-fact-sheet-2016.pdf" target="_blank"> According to Bread.org</a>, single mothers head over half of American low-income houses, and these households are more likely to he food-insecure (especially if the house is led by a woman of color.)
+
+
+
+  <!-- add Highcharts JS using the CDN -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+  <!-- change the Highcharts theme -->
+  <script src="https://code.highcharts.com/themes/avocado.js"></script>
+
+  <!-- add Highcharts print and export features - optional -->
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+  <!-- add file for your own JavaScript code - this creates the chart -
+       note, it is in the scripts/ folder  -->
+  <script src="scripts/main.js"></script>
+
+  <!-- don't forget your required tags at the end -->
+</div>
+</body>
+</html>
